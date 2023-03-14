@@ -5,3 +5,4 @@ Shell variables expansions
 3: Count directory in PATH
 4:List environmental variables
 5:List environmental local variables
+6:Create local variables
