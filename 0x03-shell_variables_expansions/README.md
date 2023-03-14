@@ -6,3 +6,4 @@ Shell variables expansions
 4:List environmental variables
 5:List environmental local variables
 6:Create local variables
+7: Create global variable
