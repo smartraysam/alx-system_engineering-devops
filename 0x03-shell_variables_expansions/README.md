@@ -8,3 +8,4 @@ Shell variables expansions
 6:Create local variables
 7: Create global variable
 8: every addition to true knowledge
+9: Divide and rule
