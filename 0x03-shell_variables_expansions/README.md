@@ -7,3 +7,4 @@ Shell variables expansions
 5:List environmental local variables
 6:Create local variables
 7: Create global variable
+8: every addition to true knowledge
