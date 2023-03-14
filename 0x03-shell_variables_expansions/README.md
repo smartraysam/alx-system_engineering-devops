@@ -16,3 +16,4 @@ Print 2 decimal place
 Decimal to hexadecimal
 encode decode text using rot 13
 Prints every other line from input
+ script that adds the two numbers stored in the environment variables WATER and STIR and prints the result
