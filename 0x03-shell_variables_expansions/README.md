@@ -15,3 +15,4 @@ convert base 2 to base 10
 Print 2 decimal place
 Decimal to hexadecimal
 encode decode text using rot 13
+Prints every other line from input
