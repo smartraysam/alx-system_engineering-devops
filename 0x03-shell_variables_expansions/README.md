@@ -12,3 +12,4 @@ Shell variables expansions
 10: 10 love exponent breath
 convert base 2 to base 10
 12: All possible combination az za except oo
+Print 2 decimal place
