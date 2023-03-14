@@ -9,3 +9,4 @@ Shell variables expansions
 7: Create global variable
 8: every addition to true knowledge
 9: Divide and rule
+10: 10 love exponent breath
