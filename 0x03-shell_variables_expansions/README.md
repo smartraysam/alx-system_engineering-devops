@@ -10,3 +10,4 @@ Shell variables expansions
 8: every addition to true knowledge
 9: Divide and rule
 10: 10 love exponent breath
+convert base 2 to base 10
