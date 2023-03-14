@@ -4,3 +4,4 @@ Shell variables expansions
 2:Add /action to PATHr
 3: Count directory in PATH
 4:List environmental variables
+5:List environmental local variables
