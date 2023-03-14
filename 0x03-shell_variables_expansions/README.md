@@ -13,3 +13,4 @@ Shell variables expansions
 convert base 2 to base 10
 12: All possible combination az za except oo
 Print 2 decimal place
+Decimal to hexadecimal
