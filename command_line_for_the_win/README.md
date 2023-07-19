@@ -31,3 +31,15 @@ Complete the 9 next tasks, getting to 18 total.
 [2. Reach the perfect cube, 27](./2-next_9_tasks.jpg) or [this](./2-next_9_tasks.png)
 
 Complete the 9 next tasks, getting to 27 total.
+
+#Transfer file to Sandbox using SFTP
+* Update the package using `sudo apt update`  
+* Install openssh-client `sudo apt install openssh-client`  
+* Go to the sandbox on the intranet . click SFTP to copy the connect url.  
+* Navigate to screenshot path and run `sftp username@remote_host`.  `
+* Prompted for password. Copy password from sandbox and paste it. 
+* create the directory /root/alx-system_engineering-devops/command_line_for_the_win/ 
+* navigate to the /root/alx-system_engineering-devops/command_line_for_the_win/ in the SFTP
+* Use mput *.jpg *.png to move the file into the path `/root/alx-system_engineering-devops/command_line_for_the_win/`
+
+ 
