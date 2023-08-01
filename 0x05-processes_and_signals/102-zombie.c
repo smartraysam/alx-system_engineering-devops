@@ -13,7 +13,7 @@ int main(void)
 	pid_t PID;
 	unsigned int i;
 
-	while(i < 5)
+	while (i < 5)
 	{
 		PID = fork();
 		if (PID == 0)
