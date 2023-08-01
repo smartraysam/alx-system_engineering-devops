@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int infinite_while(void);
+int infinite_loop(void);
 
 /**
  * main - Entry point for function to create 5 zombie processes
@@ -26,10 +26,10 @@ int main(void)
 }
 
 /**
- * infinite_while - create infinite sleep loop
+ * infinite_loop - create infinite sleep loop
  * Return: 0
  */
-int infinite_while(void)
+int infinite_loop(void)
 {
 	while (1)
 	{
