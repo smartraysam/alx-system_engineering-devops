@@ -22,7 +22,7 @@ int main(void)
 			printf("Zombie process created, PID: %d\n", PID);
 		i++;
 	}
-	return (infinite_while());
+	return (infinite_loop());
 }
 
 /**
