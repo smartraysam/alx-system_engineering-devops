@@ -1,8 +1,16 @@
 #!/usr/bin/env bash
-# A script to install nginx and redirect it to a different page
+# Installs nginx web server
+
 apt-get update
-apt-get -y install nginx
-echo "Hello World!" | sudo tee /var/www/html/index.html
-replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.google.com permanent;"
-sudo sed -i "s/server_name _;/$replacement/" /etc/nginx/sites-enabled/default
-service nginx restart
+apt-get install -y nginx
+echo "Hello World!" > /var/www/html/index.html
+echo "server {
+    listen 80;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html;
+    location /redirect_me {
+        return 301 https://google.com;
+    }
+}" > /etc/nginx/sites-available/default
+service nginx restartt
