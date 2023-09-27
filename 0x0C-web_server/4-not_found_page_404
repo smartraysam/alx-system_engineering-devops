@@ -13,7 +13,7 @@ sudo echo "server {
     root   /var/www/html;
     index  index.html;
     location /redirect_me {
-        return 301 https://google.com/ permanent;
+        return 301 https://google.com;
     }
     error_page 404 /404.html;
     location = /404.html{
