@@ -33,21 +33,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend smarttechx-frontend-http
-        bind *:80
-        mode http
-        http-request set-header X-Forwarded-Proto http
-	# redirect scheme https code 301 if { hdr(host) -i www.smarttechx.tech }
-        default_backend smarttechx-backend
+backend www-backend
+        balance roundrobin
+        server 333634-web-01 54.158.209.6:80 check
+        server 333634-web-02 100.25.169.255:80 check
 
-frontend smarttechx-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/smarttechx.tech.pem
-        # bind *:443 ssl crt /etc/haproxy/certs/www.smarttechx.tech.pem
+frontend www-http
+        bind *:80
+        http-request add-header X-Forwarded-Proto http
+        default_backend www-backend
+
+frontend www-https
+        bind *:443 ssl crt /etc/letsencrypt/archive/www.smarttechx.tech/www.smarttechx.com.pem
         http-request set-header X-Forwarded-Proto https
         http-request redirect scheme https code 301 unless { ssl_fc }
-        default_backend smarttechx-backend
-
-backend smarttechx-backend
-        balance roundrobin
-        server 333634-web-01 34.224.16.92:80 check
-	server 333634-web-02 100.25.169.255:80 check
+        acl letsencrypt-acl path beg /.well-known/acme-challenge/
+        default_backend www-backend
