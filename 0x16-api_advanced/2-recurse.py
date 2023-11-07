@@ -8,7 +8,7 @@ def recurse(subreddit, hot_list=[]):
     """Recursive function that returns a list of top posts"""
     global after
 
-    headers = {'User-Agent': 'selBot/2.1'}
+    headers = {'User-Agent': 'smartv2.1'}
     URL = f'https://www.reddit.com/r/{subreddit}/hot.json'
     params = {'after': after}
     response = requests.get(URL, params=params, headers=headers,

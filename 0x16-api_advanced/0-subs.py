@@ -8,7 +8,7 @@ def number_of_subscribers(subreddit):
     if subreddit is None or not isinstance(subreddit, str):
         return 0
 
-    headers = {'User-Agent': 'smart/1.0'}
+    headers = {'User-Agent': 'smartv1.0'}
     URL = f'https://www.reddit.com/r/{subreddit}/about.json'
 
     try:
