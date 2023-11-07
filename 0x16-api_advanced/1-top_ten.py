@@ -9,7 +9,7 @@ def top_ten(subreddit):
         print(None)
         return
 
-    headers = {'User-Agent': 'smartv2.0'}
+    headers = {'User-Agent': 'smart/1.0'}
     URL = f'https://www.reddit.com/r/{subreddit}/hot.json?limit=10'
 
     try:
